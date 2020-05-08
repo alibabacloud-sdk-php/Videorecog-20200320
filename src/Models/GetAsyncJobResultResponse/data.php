@@ -2,7 +2,7 @@
 
 // This file is auto-generated, don't edit it. Thanks.
 
-namespace AlibabaCloud\SDK\Videorecog\V20200320\Videorecog\GetAsyncJobResultResponse;
+namespace AlibabaCloud\SDK\Videorecog\V20200320\Models\GetAsyncJobResultResponse;
 
 use AlibabaCloud\Tea\Model;
 

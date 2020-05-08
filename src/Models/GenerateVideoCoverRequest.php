@@ -2,18 +2,18 @@
 
 // This file is auto-generated, don't edit it. Thanks.
 
-namespace AlibabaCloud\SDK\Videorecog\V20200320\Videorecog;
+namespace AlibabaCloud\SDK\Videorecog\V20200320\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class GenerateVideoCoverAdvanceRequest extends Model
+class GenerateVideoCoverRequest extends Model
 {
     /**
-     * @description VideoUrlObject
+     * @description videoUrl
      *
-     * @var Stream
+     * @var string
      */
-    public $videoUrlObject;
+    public $videoUrl;
 
     /**
      * @description isGif
@@ -22,21 +22,21 @@ class GenerateVideoCoverAdvanceRequest extends Model
      */
     public $isGif;
     protected $_name = [
-        'videoUrlObject' => 'VideoUrlObject',
-        'isGif'          => 'IsGif',
+        'videoUrl' => 'VideoUrl',
+        'isGif'    => 'IsGif',
     ];
 
     public function validate()
     {
-        Model::validateRequired('videoUrlObject', $this->videoUrlObject, true);
+        Model::validateRequired('videoUrl', $this->videoUrl, true);
         Model::validateRequired('isGif', $this->isGif, true);
     }
 
     public function toMap()
     {
-        $res                   = [];
-        $res['VideoUrlObject'] = $this->videoUrlObject;
-        $res['IsGif']          = $this->isGif;
+        $res             = [];
+        $res['VideoUrl'] = $this->videoUrl;
+        $res['IsGif']    = $this->isGif;
 
         return $res;
     }
@@ -44,13 +44,13 @@ class GenerateVideoCoverAdvanceRequest extends Model
     /**
      * @param array $map
      *
-     * @return GenerateVideoCoverAdvanceRequest
+     * @return GenerateVideoCoverRequest
      */
     public static function fromMap($map = [])
     {
         $model = new self();
-        if (isset($map['VideoUrlObject'])) {
-            $model->videoUrlObject = $map['VideoUrlObject'];
+        if (isset($map['VideoUrl'])) {
+            $model->videoUrl = $map['VideoUrl'];
         }
         if (isset($map['IsGif'])) {
             $model->isGif = $map['IsGif'];

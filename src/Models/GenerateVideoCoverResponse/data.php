@@ -2,8 +2,9 @@
 
 // This file is auto-generated, don't edit it. Thanks.
 
-namespace AlibabaCloud\SDK\Videorecog\V20200320\Videorecog\GenerateVideoCoverResponse;
+namespace AlibabaCloud\SDK\Videorecog\V20200320\Models\GenerateVideoCoverResponse;
 
+use AlibabaCloud\SDK\Videorecog\V20200320\Models\GenerateVideoCoverResponse\data\outputs;
 use AlibabaCloud\Tea\Model;
 
 class data extends Model
@@ -50,7 +51,7 @@ class data extends Model
                 $model->outputs = [];
                 $n              = 0;
                 foreach ($map['Outputs'] as $item) {
-                    $model->outputs[$n++] = null !== $item ? GenerateVideoCoverResponse\data\outputs::fromMap($item) : $item;
+                    $model->outputs[$n++] = null !== $item ? outputs::fromMap($item) : $item;
                 }
             }
         }

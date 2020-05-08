@@ -2,12 +2,12 @@
 
 // This file is auto-generated, don't edit it. Thanks.
 
-namespace AlibabaCloud\SDK\Videorecog\V20200320\Videorecog;
+namespace AlibabaCloud\SDK\Videorecog\V20200320\Models;
 
-use AlibabaCloud\SDK\Videorecog\V20200320\Videorecog\GenerateVideoCoverResponse\data;
+use AlibabaCloud\SDK\Videorecog\V20200320\Models\GetAsyncJobResultResponse\data;
 use AlibabaCloud\Tea\Model;
 
-class GenerateVideoCoverResponse extends Model
+class GetAsyncJobResultResponse extends Model
 {
     /**
      * @description requestId
@@ -19,7 +19,7 @@ class GenerateVideoCoverResponse extends Model
     /**
      * @description data
      *
-     * @var GenerateVideoCoverResponse.data
+     * @var GetAsyncJobResultResponse.data
      */
     public $data;
     protected $_name = [
@@ -45,7 +45,7 @@ class GenerateVideoCoverResponse extends Model
     /**
      * @param array $map
      *
-     * @return GenerateVideoCoverResponse
+     * @return GetAsyncJobResultResponse
      */
     public static function fromMap($map = [])
     {
@@ -54,7 +54,7 @@ class GenerateVideoCoverResponse extends Model
             $model->requestId = $map['RequestId'];
         }
         if (isset($map['Data'])) {
-            $model->data = GenerateVideoCoverResponse\data::fromMap($map['Data']);
+            $model->data = data::fromMap($map['Data']);
         }
 
         return $model;

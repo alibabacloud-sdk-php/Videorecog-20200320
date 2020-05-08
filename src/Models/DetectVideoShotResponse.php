@@ -2,9 +2,9 @@
 
 // This file is auto-generated, don't edit it. Thanks.
 
-namespace AlibabaCloud\SDK\Videorecog\V20200320\Videorecog;
+namespace AlibabaCloud\SDK\Videorecog\V20200320\Models;
 
-use AlibabaCloud\SDK\Videorecog\V20200320\Videorecog\DetectVideoShotResponse\data;
+use AlibabaCloud\SDK\Videorecog\V20200320\Models\DetectVideoShotResponse\data;
 use AlibabaCloud\Tea\Model;
 
 class DetectVideoShotResponse extends Model
@@ -54,7 +54,7 @@ class DetectVideoShotResponse extends Model
             $model->requestId = $map['RequestId'];
         }
         if (isset($map['Data'])) {
-            $model->data = DetectVideoShotResponse\data::fromMap($map['Data']);
+            $model->data = data::fromMap($map['Data']);
         }
 
         return $model;
